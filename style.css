@@ -31,21 +31,28 @@ p{
   margin: 0 auto;
 }
 
-
 section{
   padding: 120px 0;
 }
 
 .first{
-  background-color: #7e8284;
+  background-image: url(/content/dune01.jpg); background-size: cover;
 }
 
 .third{
-  background-color: rgb(34, 167, 167);
+  background-image: url(/content/mountain01.png); background-size: cover;
+  color: white;
+  /* background-color: rgb(34, 167, 167); */
 }
 
 .fourth{
+  background-image: url(/content/mountain02.jpg); background-size: cover;
   color: white;
+}
+
+.five{
+  background-image: url(/content/mountain03.jpg); background-size: cover;
+  color: black;
 }
 
 
@@ -53,7 +60,38 @@ section{
 
 
 
-/* buttons start here*/
+
+
+
+/* ???????????????????????????????????????????????????????????????????????????????????????? */
+/* #p1{
+  border: 5px solid rgb(230, 13, 230);
+  margin-bottom: 10cm;
+} */
+
+#paragraph {
+  margin-bottom: 10cm;
+ }
+/* section.five .container p:nth-child(2){
+  margin-top: 10cm;
+  border: 5px solid rgb(230, 13, 230);
+}  */
+
+/* #donation .container:nth-child(2){
+ 
+} */
+
+/* ????????????????????????????????????????????????????????????????????????????????????????  */
+
+
+
+
+
+
+
+
+
+/* ################ buttons start here ################ */
 
 .btn{
   display: inline-block;
@@ -93,8 +131,20 @@ section{
   box-shadow: 0px 18px 3px -10px rgba(0, 0, 0, .75);
 }
 
-/* header starts here */
+.btn-login{
+  color: #a2d5f4;
+  border-radius: 10px;
+  border: 2px solid #a2d5f4;
+  background: transparent;
+  /* box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, .75); */
+}
 
+.btn-login:hover{
+  /* color: white; */
+  background: #a2d5f4;
+  color: black;
+}
+/* header starts here */
 
 header{
   background-color: #0c87a3;
@@ -112,38 +162,35 @@ header::after{
   float: left;
   padding: 10px 0;
 }
-/* padding not working??? */
 
 
 nav{
-  float: right;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+}
 nav ul{
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 nav li{
   display: inline-block;
   margin-left: 70px;
   padding-top: 35px;
-
   position: relative;
 }
-
-nav ul > li > a {
+nav a {
   color: #a2d5f4;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
 }
-
-nav ul > li > a:hover{
+nav a:hover{
   color: black;
+  background: #a2d5f4;
 }
-
 nav a::before{
   content: '';
   display: block;
@@ -152,16 +199,62 @@ nav a::before{
   top: 0;
   position: absolute;
   width: 0%;
-
   transition: all ease-in-out 250ms;
 }
-
 nav a:hover::before {
   width: 100%;
 }
 .active {
   background-color: #04AA6D;
 }
+
+nav-bar{
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: space-between; */
+}
+
+    /* nav{
+      float: right;
+    }
+    nav ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    nav li{
+      display: inline-block;
+      margin-left: 70px;
+      padding-top: 35px;
+
+      position: relative;
+    }
+    nav ul > li > a {
+      color: #a2d5f4;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    nav ul > li > a:hover{
+      color: black;
+    }
+    nav a::before{
+      content: '';
+      display: block;
+      height: 4px;
+      background-color: #a2d5f4;
+      top: 0;
+      position: absolute;
+      width: 0%;
+
+      transition: all ease-in-out 250ms;
+    }
+    nav a:hover::before {
+      width: 100%;
+    }
+    .active {
+      background-color: #04AA6D;
+    } */
 
 /* style for tables */
 
@@ -205,5 +298,71 @@ table {
   overflow: auto;
 }
 
+/* <style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+</style> */
 
 
+/* %%%%%%%%%%%%%%%%%%        Modal Login Button        %%%%%%%%%%%%%%%%%% */
+
+ /* The Modal (background) */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover, .close:focus {
+  color: white;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+} 

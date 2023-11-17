@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>My first webpage!</title>
 
   </head>
@@ -18,22 +19,72 @@
     <!--  header starts here  -->
 
 
+
+
     <header> 
       <div class="container">
-          <a href="../index.html">
-            <img src="../content/logo.jpg" alt="Logo"  > 
+  
+          <a class="logo" href="../index.html">
+            <img src="../content/logo.jpg" alt="Logo"> 
           </a>
-      <nav> 
-          <ul>
-              <li><a href="../index.html">Home</a> </li>  
-              <li><a href="../about/about.html">About</a></li>
-              <li><a href="../donation/donation.html">Donation</a></li>
-              <li><a href="../information/info.html">Info</a></li>
-              <li><a href="../contacts/contact.html">Contact</a></li>
-          </ul>
-      </nav>  
+          <nav> 
+            <ul>
+              <nav-bar>
+              <li>
+                <a href="../index.html"><i title="Home" class="material-icons" id="home-btn">home</i></a>
+              </li>  
+              <li>
+                <a href="../about/about.html"><i title="Info" class="material-icons">dataset</i></a>
+              </li>
+              <li>
+                <a href="../donation/donation.html"><i title="Donation" class="material-icons">credit_card</i></a>
+              </li>
+              <li>
+                <a href="../information/info.html"><i title="Data" class="material-icons">info</i></a>
+              </li>
+              <li>
+                <button class="btn-login"><a href="./contact.html"><i title="Contact" class="material-icons">location_on</i></a></button>
+              </li>
+              <li>
+                <button onclick="document.getElementById('id01').style.display='block'" class="btn-login"><i class="material-icons">login</i></button>
+                <!-- The Modal -->
+                <div id="id01" class="modal">
+                  <span onclick="document.getElementById('id01').style.display='none'"
+                class="close" title="Close Modal">&times;</span>
+                
+                  <!-- Modal Content -->
+                  <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                      <img src="../content/avatar.png" alt="Avatar" class="avatar">
+                    </div>
+                
+                    <div class="container">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+                
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                </div>
+              </li>
+            </nav-bar>
+            </ul>
+          </nav>    
       </div>
     </header>
+  
+  
 
 
     <!-- Body starts here -->
