@@ -1,110 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="./info.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+    <link rel="stylesheet" href="./info2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>Info Page</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item-1">
+        <header>
+          <div class="nav-list">
+            <a class="logo" href="./index.html"
+              ><img src="../content/logo.jpg" alt="Logo"
+            /></a>
+            <a href="../index.html" class="btn-login material-icons"
+              ><span class="material-symbols-outlined">home</span></a
+            >
+            <a href="../about/about.html" class="btn-login material-icons"
+              ><span class="material-symbols-outlined">settings</span></a
+            >
+            <a href="../donation/donation.html" class="btn-login material-icons"
+              ><span class="material-symbols-outlined">credit_card</span></a
+            >
+            <a href="../information/info2.html" class="btn-login material-icons"
+              ><span class="material-symbols-outlined">info</span></a
+            >
+            <a href="../contacts/contact.html" class="btn-login material-icons"
+              ><span class="material-symbols-outlined">navigation</span></a
+            >
+            <a
+              href="../grid-test/grid-test.html"
+              class="btn-login material-icons"
+              ><span class="material-symbols-outlined">bug_report</span></a
+            >
+            <button
+              onclick="document.getElementById('id01').style.display='block'"
+              class="btn-login"
+            >
+              <i class="material-icons">login</i>
+            </button>
+            <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Start Modal Login %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+            <div id="id01" class="modal">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
+              <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Modal Content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <img src="./content/avatar.png" alt="Avatar" class="avatar" />
+                </div>
 
+                <div class="container-modal">
+                  <label for="uname"><b>Username</b></label>
+                  <input
+                    type="text"
+                    placeholder="Enter Username"
+                    name="uname"
+                    required
+                  />
 
+                  <label for="psw"><b>Password</b></label>
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    name="psw"
+                    required
+                  />
 
-
-    <header> 
-        <div class="container">
-    
-            <a class="logo" href="../index.html">
-              <img src="../content/logo.jpg" alt="Logo"> 
-            </a>
-            <nav> 
-              <ul>
-                <nav-bar>
-                <li>
-                  <a href="../index.html"><i title="Home" class="material-icons" id="home-btn">home</i></a>
-                </li>  
-                <li>
-                  <a href="../about/about.html"><i title="Info" class="material-icons">dataset</i></a>
-                </li>
-                <li>
-                  <a href="../donation/donation.html"><i title="Donation" class="material-icons">credit_card</i></a>
-                </li>
-                <li>
-                  <a href="./info.html"><i title="Data" class="material-icons">info</i></a>
-                </li>
-                <li>
-                  <button class="btn-login"><a href="../contacts/contact.html"><i title="Contact" class="material-icons">location_on</i></a></button>
-                </li>
-                <li>
-                  <button onclick="document.getElementById('id01').style.display='block'" class="btn-login"><i class="material-icons">login</i></button>
-                  <!-- The Modal -->
-                  <div id="id01" class="modal">
-                    <span onclick="document.getElementById('id01').style.display='none'"
-                  class="close" title="Close Modal">&times;</span>
-                  
-                    <!-- Modal Content -->
-                    <form class="modal-content animate" action="/action_page.php">
-                      <div class="imgcontainer">
-                        <img src="../content/avatar.png" alt="Avatar" class="avatar">
-                      </div>
-                  
-                      <div class="container">
-                        <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
-                  
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                  
-                        <button type="submit">Login</button>
-                        <label>
-                          <input type="checkbox" checked="checked" name="remember"> Remember me
-                        </label>
-                      </div>
-                  
-                      <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                        <span class="psw">Forgot <a href="#">password?</a></span>
-                      </div>
-                    </form>
-                  </div>
-                </li>
-              </nav-bar>
-              </ul>
-            </nav>    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" />
+                    Remember me
+                  </label>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn"
+                  >
+                    Cancel
+                  </button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </header>
+      </div>
+      <!-- main starts here  -->
+      <div class="item-2">
+        <div>
+          <h1>some table content</h1>
+          <div id="memory-table">
+            <table id="memory">
+              <tr>
+                <th>Name</th>
+                <th>About</th>
+                <th>Death</th>
+              </tr>
+              <tr>
+                <td>Azog</td>
+                <td>Lord of the Third Age</td>
+                <td>TA 2799</td>
+              </tr>
+              <tr>
+                <td>Bolg</td>
+                <td>Leader of the Misty Mountains</td>
+                <td>2941</td>
+              </tr>
+              <tr>
+                <td>Golfimbul</td>
+                <td>King of of Mount Gram</td>
+                <td>TA 2747</td>
+              </tr>
+              <tr>
+                <td>Gorbag</td>
+                <td>
+                  Captain of Cirith Ungol, known for his intelligence and
+                  craftsmanship
+                </td>
+                <td>March 14, TA 3019</td>
+              </tr>
+              <tr>
+                <td>Grishnákh</td>
+                <td>Captain of Mordor</td>
+                <td>February 29, TA 3019</td>
+              </tr>
+              <tr>
+                <td>Shagrat</td>
+                <td>Captain of Cirith Ungol</td>
+                <td>Unknown</td>
+              </tr>
+              <tr>
+                <td>Snaga</td>
+                <td>Stationed at the Tower of Cirith Ungol</td>
+                <td>TA 3019</td>
+              </tr>
+              <tr>
+                <td>Uglúk</td>
+                <td>Captain of the Uruk-hai under Saruman</td>
+                <td>February 29, TA 3019</td>
+              </tr>
+            </table>
+          </div>
         </div>
-      </header>
-    
-    
-
-      <div class="info-container">
-
-  
-        <div class="item item-1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laboriosam at, est in suscipit nesciunt iusto vel praesentium accusantium nam iure porro, exercitationem eos accusamus ipsam a blanditiis? Explicabo, officia?
-        </div> 
-      
-      
-        <div class="item item-2">
-                 text text text
-        </div>
-      
-      
-        <div class="item item-3">
-                <!-- Text input -->
-        </div>
-      
-      
-        <div class="item item-4">
-            <!-- Text input -->
-        </div>
-      
-      
       </div>
 
+      <!-- side starts here -->
+      <div class="item-3">
+        <div>
+          <h1>sidebar goes here</h1>
+          <p>some ads</p>
+        </div>
+        <div>
+          <h1>this could be your potatoes</h1>
+          <div>
+            <img
+              src="../content/potatoes.jpeg"
+              alt="some potatoes"
+              style="width: fit-content"
+            />
+          </div>
+        </div>
+      </div>
 
-
-</body>
+      <!-- footer starts here -->
+      <div class="item-4">
+        <footer>
+          <p>@2023 An awful author | All Rights Reserved</p>
+          <p>
+            <a href="mailto:donottextme@pleasedont.com"
+              >donottextme@pleasedont.com</a
+            >
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>

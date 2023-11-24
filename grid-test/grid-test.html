@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid-test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Grid Test</title>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapperchild wrapperheader">
+          <header class="header"> 
+            <div class="nav-list">
+              <a class="logo" href="../index.html"><img src="../content/logo.jpg" alt="Logo" ></a>
+              <a href="../index.html" class="btn-login material-icons"><span class="material-symbols-outlined">home</span></a>
+              <a href="./about.html" class="btn-login material-icons"><span class="material-symbols-outlined">settings</span></a>
+              <a href="../donation/donation.html" class="btn-login material-icons"><span class="material-symbols-outlined">credit_card</span></a>
+              <a href="../information/info2.html" class="btn-login material-icons"><span class="material-symbols-outlined">info</span></a>
+              <a href="../contacts/contact.html" class="btn-login material-icons"><span class="material-symbols-outlined">navigation</span></a>
+              <a href="../grid-test/grid-test.html" class="btn-login material-icons"><span class="material-symbols-outlined">bug_report</span></a>
+              <button onclick="document.getElementById('id01').style.display='block'" class="btn-login"><i class="material-icons">login</i></button>
+                    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Start Modal Login %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                    <div id="id01" class="modal">
+                      <span onclick="document.getElementById('id01').style.display='none'"
+                    class="close" title="Close Modal">&times;</span>
+                      <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Modal Content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+        
+                      <form class="modal-content animate" action="/action_page.php">
+                        <div class="imgcontainer">
+                          <img src="../content/avatar.png" alt="Avatar" class="avatar">
+                        </div>
+                    
+                        <div class="container-modal">
+                          <label for="uname"><b>Username</b></label>
+                          <input type="text" placeholder="Enter Username" name="uname" required>
+                    
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                          <button type="submit">Login</button>
+                          <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                          </label>
+                        </div>
+                    
+                        <div class="container" style="background-color:#f1f1f1">
+                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                          <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                      </form>
+                    </div>
+        
+                    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End Modal Login %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                
+              </div>
+          </header>
+        </div>
+        <div class="wrapperchild wrapperlogin">
+              <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                class="close" title="Close Modal">&times;</span>
+                <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Modal Content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+                <form class="modal-content animate" action="/action_page.php">
+                  <div class="imgcontainer">
+                    <img src="../content/avatar.png" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="container-modal">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+
+
+              <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End Modal Login %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+        </div>
+        <div class="wrapperchild wrappermain">
+            <section class="first" >
+                <div class="container">
+                    <h1>1. A not so interesting paragraph</h1>
+                    <h2>A not so interesting subparagraph</h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error laborum repellat unde, fuga tempore! Libero minus quisquam animi, reprehenderit dolore sint explicabo facere ea deserunt, quas eaque veniam eum.
+                      <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad earum asperiores voluptatum nobis quo sit veniam exercitationem blanditiis cupiditate? Id molestias dolorum voluptatem perspiciatis, illum facilis commodi placeat autem distinctio!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate vero consequuntur earum delectus laborum error repudiandae omnis inventore dolor veritatis nesciunt quis, fuga distinctio velit sunt quia architecto? Cumque, harum?
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab odio maxime consectetur quo cupiditate minus, harum esse temporibus itaque! Cupiditate cumque ipsam modi eligendi! Cumque quasi ullam aspernatur culpa error?
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis error laborum repellat unde, fuga tempore! Libero minus quisquam animi, reprehenderit dolore sint explicabo facere ea deserunt, quas eaque veniam eum.
+                      <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad earum asperiores voluptatum nobis quo sit veniam exercitationem blanditiis cupiditate? Id molestias dolorum voluptatem perspiciatis, illum facilis commodi placeat autem distinctio!
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate vero consequuntur earum delectus laborum error repudiandae omnis inventore dolor veritatis nesciunt quis, fuga distinctio velit sunt quia architecto? Cumque, harum?
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab odio maxime consectetur quo cupiditate minus, harum esse temporibus itaque! Cupiditate cumque ipsam modi eligendi! Cumque quasi ullam aspernatur culpa error?
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="wrapperchild wrappersidebar">
+            <h1>sidebar</h1>
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eaque libero nobis, adipisci praesentium doloribus quibusdam harum. Dolore labore culpa eum, reiciendis, saepe debitis numquam similique quas, ipsam quos odit.</p>
+        </div>
+        <div class="wrapperchild wrapperfooter">
+            <p>@2023 An awful author | All Rights Reserved</p>
+            <p><a href="mailto:donottextme@pleasedont.com">donottextme@pleasedont.com</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>

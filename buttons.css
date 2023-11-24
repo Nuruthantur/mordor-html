@@ -1,0 +1,51 @@
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em 2em;
+  }
+  
+  .btn-normal{
+    background: #0c87a3;
+    color: black;
+  }
+  
+  .btn-normal:hover{
+    background: #096a80;
+    color: white;
+  }
+  
+  .btn-cool{
+    border: 2px solid white;
+    color: white;
+  }
+  
+  .btn-cool:hover {
+    background: white;
+    color: black;
+  }
+  
+  .btn-awesome{
+    color: white;
+    background: #167084;
+    box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, .75);
+  }
+  
+  .btn-awesome:hover{
+    color: black;
+    transform: translateY(-10px);
+    box-shadow: 0px 18px 3px -10px rgba(0, 0, 0, .75);
+  }
+  
+  .btn-login{
+    color: #a2d5f4;
+    border-radius: 10px;
+    border: 2px solid #a2d5f4;
+    background: transparent;
+    /* box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, .75); */
+  }
+  
+  .btn-login:hover{
+    /* color: white; */
+    background: #a2d5f4;
+    color: black;
+  }

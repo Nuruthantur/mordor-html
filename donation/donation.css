@@ -1,23 +1,73 @@
+*, ::before, ::after {
+  transition: all ease-in-out 200ms;
+}
+ body{
+  background: #5f5f5f;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+h1{
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: -1.6px;
+  line-height: 3.6rem;
+  padding: 1rem;
+}
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  margin: 0 auto;
+  /* text-align: justify; */
+  /* text-justify: inter-word; */
+  /* align-items: stretch; */
+  align-content: center;
+  padding-bottom: 1rem;
+}
+.container-item1 {
+  order: 2;
+  flex-grow: 4;
+
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-list{
+  display: flex;
+  background-color: #005F6A;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
 .terms{
     background-color: aliceblue;
 }
 
-
-
-
-
-
 * {box-sizing: border-box}
-
-/* Add padding to containers */
-.container {
-  padding: 16px;
-}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
+  width: 80%;
+  padding: 1em;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
@@ -29,11 +79,13 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
+
+
 /* Full-width input fields for numbers */
 input[type=number] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    width: 80%;
+    padding: 1em;
+    margin: 1em 0 1.5em 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -48,6 +100,60 @@ input[type=number] {
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
+}
+
+.radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  background-color: #0c87a3;
+  border-radius: 50%;
+}
+
+.radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: #096a80;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.radio .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 /* Set a style for the donate button */
@@ -67,9 +173,6 @@ hr {
   color: black;
 }
 
-
-
-
 /* Add a blue text color to links */
 a {
   color: dodgerblue;
@@ -81,11 +184,39 @@ a {
   text-align: center;
 }
 
+.btn-login{
+  color: #a2d5f4;
+  border-radius: 10px;
+  border: 2px solid #a2d5f4;
+  background: transparent;
+}
+
+.btn-login:hover{
+  background: #a2d5f4;
+  color: black;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: row;
+
+}
 
 
 
-
-
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
 
 
 
