@@ -14,7 +14,7 @@
 display: flex;grid-area: header;flex-direction: row;}
 .item-2 {display: flex;grid-area: main;flex-flow: column wrap;justify-content: center; align-items: center;}
 .item-3 {display: flex; grid-area: side; flex-flow: column wrap; justify-content: center; align-items: center; align-content: center;}
-.item-4 {display: flex; grid-area: footer; flex-flow: colum wrap; justify-content: center; align-items: center;}
+.item-4 {display: flex; grid-area: footer; flex-flow: column wrap; justify-content: center; align-items: center;}
 
 .nav-list {
   display: flex;

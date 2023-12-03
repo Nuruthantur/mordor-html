@@ -53,7 +53,7 @@
         >
           <i class="material-icons">login</i>
         </button>
-        <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Start Modal Login %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+        <!--  Modal Login  -->
         <div id="id01" class="modal">
           <span
             onclick="document.getElementById('id01').style.display='none'"
@@ -61,7 +61,7 @@
             title="Close Modal"
             >&times;</span
           >
-          <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Modal Content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+          <!--  Modal Content  -->
 
           <form class="modal-content animate" action="/action_page.php">
             <div class="imgcontainer">
@@ -104,7 +104,7 @@
           </form>
         </div>
 
-        <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End Modal Login %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+        <!--  End Modal Login  -->
       </div>
     </header>
 
@@ -243,27 +243,35 @@
         <!-- <a href="#" class="btn btn-awesome">Awesome Button</a> -->
       </div>
 
-      <div class="container">
+      <div class="container" id="lastContainerIndex">
         <h1>How you can help</h1>
         <!-- <div id="paragraph"> -->
         <p>
           If you want to help us you can do so by clicking the button below and
-          donate to the people of Mordor: <br />
-          <a href="./donation/donation.html" class="btn btn-awesome"
+          donate to the people of Mordor:
+        </p>
+        <div id="donationButtonDiv">
+          <a
+            href="./donation/donation.html"
+            class="btn btn-awesome"
+            id="donationButton"
             >Donate now!</a
           >
-        </p>
-        <!-- </div> -->
+        </div>
       </div>
-      <footer>
+    </section>
+    <footer class="footer">
+      <div>
         <p>@2023 An awful author | All Rights Reserved</p>
+      </div>
+      <div>
         <p>
           <a href="mailto:donottextme@pleasedont.com"
             >donottextme@pleasedont.com</a
           >
         </p>
-      </footer>
-    </section>
+      </div>
+    </footer>
 
     <!-- <h1 class="text">Welcome to Mordor</h1>
     

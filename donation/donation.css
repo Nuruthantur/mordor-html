@@ -17,9 +17,11 @@ h1{
 }
 .container{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   width: 90%;
   margin: 0 auto;
+  /* align-items: center; */
+  justify-content: center;
   /* text-align: justify; */
   /* text-justify: inter-word; */
   /* align-items: stretch; */
@@ -217,6 +219,9 @@ a {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   padding-top: 60px;
 }
-
-
-
+.footer{
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+}
